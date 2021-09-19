@@ -1,0 +1,12 @@
+Spring Boot:
+	Build application using 'mvn clean install'
+	Run application using 'mvn spring-boot:run'
+	Use curl to call the apis:
+		curl -X POST localhost:8080/stack/push?item=3
+		curl -X GET localhost:8080/stack/pop
+		curl -X GET localhost:8080/stack/get
+		
+Angular:
+	Install dependencies using 'npm install'
+	Run application using 'npm start'
+	Navigate to 'localhost:4200' on your browser to access the application

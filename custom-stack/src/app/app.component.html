@@ -1,0 +1,44 @@
+<div class="card">
+  <div class="card-header">
+    <span>{{pageTitle}}</span>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+
+      <div class="m-2"> Actions: </div>
+      
+      <div>
+        <button (click)="showInput()">
+          <span>Push</span>
+        </button>
+      </div>
+
+      <div>
+        <button (click)="popItem()">
+          <span>Pop</span>
+        </button>
+      </div>
+
+      <div>
+        <button (click)="getItem()">
+          <span>Get</span>
+        </button>
+      </div>
+
+    </div>
+    <div class="col-md-9" >
+      <div class="mt-5" *ngIf="showInputBox">
+        <input type='text' [(ngModel)]='newValue' />
+        <button (click)="addItem()">
+          <span>Submit</span>
+        </button>
+      </div>
+      <div class="successMessage" *ngIf="successMessage">
+        <span>{{successMessage}} {{itemRetrieved}}</span>
+      </div>
+      <div class="errorMessage" *ngIf="showErrorMessage">
+        <span>{{errorMessage}}</span>
+      </div>
+    </div>
+  </div>
+</div>

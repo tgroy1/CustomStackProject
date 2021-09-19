@@ -1,0 +1,18 @@
+button {
+  margin: 10px;
+}
+
+.message {
+  position: absolute;
+  top: 135px;
+}
+
+.errorMessage {
+  color: red;
+  @extend .message;
+}
+
+.successMessage {
+  color: green;
+  @extend .message;
+}
